@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Password Generator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="container">
+        <div class="head">
+            <h2>Password Generator</h2>
+            <button id="dkMode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+        <div class="options">
+            <div class="funny">
+                <input type="radio" name="pass" value="funny" id="funny">&nbsp;<label for="funny">Choose a Funny
+                    Password</label>
+            </div>
+            <div class="strong">
+                <input type="radio" name="pass" value="strong" id="strong">&nbsp;<label for="strong">Choose a Strong
+                    Password</label>
+            </div>
+            <div class="veryStrong">
+                <input type="radio" name="pass" value="veryStrong" id="veryStrong">&nbsp;<label for="veryStrong">Choose
+                    Very Strong Password</label>
+            </div>
+        </div>
+        <div class="showPass">
+            <input id="showPass" value="Your Password Will be Shown here... " readonly> &nbsp; &nbsp; &nbsp;
+            <img src="assets/clip.svg" title="Copy to Clipboard" id="img">
+        </div>
+        <button id="generate">Generate New Password</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
